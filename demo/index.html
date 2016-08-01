@@ -1,28 +1,41 @@
 <html>
     <head>
         <title>Bgimg</title>
-        <style>
-            #demo {
-                width: 300px;
-                height: 300px;
-                display: block;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
     </head>
     <body>
+        <h1>Defaults</h1>
         <div
-            class="bgimg"
+            class="demodiv demo"
             data-bgimg="./assets/200x200-4.png"
-            data-bgimg-repeat="no-repeat"
-            data-bgimg-size="cover"
-            data-bgimg-position="center center"
-            data-bgimg-color="red"
-            id="demo"
             ></div>
+
+        <h1>JavaScript</h1>
+        <div
+            class="demodiv demo2"></div>
+
+        <h1>Data Attributes</h1>
+        <div
+            class="demodiv demo3"
+            data-bgimg="./assets/200x500.png"
+            data-bgimg-color="rgba(72, 79, 221, 1)"
+            data-bgimg-repeat="no-repeat"
+            data-bgimg-size="contain"
+            data-bgimg-position="bottom right"
+            ></div>
+
         <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         <script src="../bgimg.js"></script>
         <script type="text/javascript">
-        $('.bgimg').bgimg();
+            $('.demo').bgimg();
+            $('.demo2').bgimg({
+                backgroundImage: './assets/300x300.png',
+                backgroundColor: '#D14',
+                backgroundRepeat: 'repeat-x',
+                backgroundSize: '50px 50px',
+                backgroundPosition: 'top center'
+            });
+            $('.demo3').bgimg()
         </script>
     </body>
 </html>
