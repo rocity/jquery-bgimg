@@ -15,9 +15,13 @@ Make images become `background-image`s for HTML elements
 ```
 
 # Installation
-Clone this repo then copy bgimg.js into your project directory
+
+`jQuery` is a dependency for `bgimg.js`.
+
+Clone this repo then copy `bgimg.js` into your project directory
 
 ```html
+<script src="jquery.min.js"></script>
 <script src="bgimg.js"></script>
 ```
 
