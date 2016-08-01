@@ -1,10 +1,32 @@
 # Bgimg
-Make images become `background-image`s for HTML elements
+
+Make images become `background-image`s for HTML elements.
+
+# Installation
+
+`jQuery` is a dependency for `bgimg.js`.
+
+Clone this repo then copy `bgimg.js` into your project directory.
+
+```html
+<script src="jquery.min.js"></script>
+<script src="jquery-bgimg.js"></script>
+```
+
+# Options
+
+| Option        | Description   |
+| ------------- | ------------- |
+| `data-bgimg` `backgroundImage`  | The image that you want as background |
+| `data-bgimg-repeat` `backgroundRepeat`      | The option for how your background image is repeated      |
+| `data-bgimg-size` `backgroundSize` | The size of your background image      |
+| `data-bgimg-position` `backgroundPosition` | The position of your background image |
+| `data-bgimg-color` `backgroundColor` | *Bonus* The background color of your target element |
+
 
 # Example
 ```html
 <div
-    class="bgimg"
     data-bgimg="./assets/200x200-4.png"
     data-bgimg-repeat="no-repeat"
     data-bgimg-size="cover"
@@ -12,29 +34,13 @@ Make images become `background-image`s for HTML elements
     data-bgimg-color="transparent"
     id="demo"
     ></div>
+
+<script type="text/javascript">
+    $('#demo').bgimg();
+</script>
 ```
 
-# Installation
-
-`jQuery` is a dependency for `bgimg.js`.
-
-Clone this repo then copy `bgimg.js` into your project directory
-
-```html
-<script src="jquery.min.js"></script>
-<script src="bgimg.js"></script>
-```
-
-Add the class `.bgimg` to your target element then use the `data` attributes given below to assign the options that you want in your element. See example above.
-
-# Options
-| Option        | Description   |
-| ------------- | ------------- |
-| data-bgimg  | The image that you want as background |
-| data-bgimg-repeat      | The option for how your background image is repeated      |
-| data-bgimg-size | The size of your background image      |
-| data-bgimg-position | The position of your background image |
-| data-bgimg-color | Bonus* The background color of your target element |
+Check out the [demo](./demo/) directory for more examples on how to use this plugin.
 
 # License
 
