@@ -4,13 +4,13 @@ Make images become `background-image`s for HTML elements.
 
 # Installation
 
-`jQuery` is a dependency for `bgimg.js`.
+`jQuery` is a dependency for `jquery.bgimg.js`.
 
-Clone this repo then copy `bgimg.js` into your project directory.
+Clone this repo then copy `jquery.bgimg.js` into your project directory.
 
 ```html
 <script src="jquery.min.js"></script>
-<script src="jquery-bgimg.js"></script>
+<script src="jquery.bgimg.js"></script>
 ```
 
 # Options
@@ -23,6 +23,7 @@ Clone this repo then copy `bgimg.js` into your project directory.
 | `data-bgimg-position` `backgroundPosition` | The position of your background image |
 | `data-bgimg-color` `backgroundColor` | *Bonus* The background color of your target element |
 
+*Note: data-attributes take precedence over options declared using JS.*
 
 # Example
 ```html
