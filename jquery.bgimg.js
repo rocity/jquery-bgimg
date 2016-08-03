@@ -16,11 +16,11 @@
 
             var t   = $(this),
                 d   = t.data(),
-                img   = d.bgimg;
+                img = d.bgimg;
 
             // Check if dataimg data attribute is set for the element
             // If not set, use the string used in the JS declaration
-            if (img === undefined) {
+            if (typeof img === 'undefined') {
                 img = settings.backgroundImage;
             }
 
