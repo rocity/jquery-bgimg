@@ -1,3 +1,11 @@
+/**
+ * Bgimg v0.0.1 - Make images become background-images for HTML elements.
+ * https://github.com/rocity/jquery-bgimg/
+ *
+ * Copyright 2016, Kevin Kalis - https://rocity.github.io/
+ *
+ * Released under the MIT license - http://opensource.org/licenses/MIT
+ */
 (function ($) {
     "use strict";
     $.fn.bgimg = function (options) {
