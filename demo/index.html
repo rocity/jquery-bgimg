@@ -4,17 +4,43 @@
         <link rel="stylesheet" type="text/css" href="./assets/style.css">
     </head>
     <body>
-        <h1>Defaults</h1>
+        <h1>Bgimg Demos</h1>
+        <p>Make images become <span class="code">background-image</span>s for HTML elements.</p>
+        <hr>
+
+        <h2>Defaults</h2>
+        <p>
+            Using <span class="code">bgimg</span> with the default settings.
+        </p>
         <div
             class="demodiv demo"
             data-bgimg="./assets/200x200-4.png"
             ></div>
 
-        <h1>JavaScript</h1>
+        <h2>JavaScript</h2>
+        <p>
+            Parameters set using JavaScript.
+        </p>
+        <pre>$('.demo2').bgimg({
+    backgroundImage: './assets/300x300.png',
+    backgroundColor: '#D14',
+    backgroundRepeat: 'repeat-x',
+    backgroundSize: '50px 50px',
+    backgroundPosition: 'top center'
+});</pre>
         <div
             class="demodiv demo2"></div>
 
-        <h1>Data Attributes</h1>
+        <h2>Data Attributes</h2>
+        <p>
+            Parameters set using HTML5's <a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/Using_data_attributes">data attributes</a>.
+        </p>
+        <pre>
+data-bgimg="./assets/200x500.png"
+data-bgimg-color="rgba(72, 79, 221, 1)"
+data-bgimg-repeat="no-repeat"
+data-bgimg-size="contain"
+data-bgimg-position="bottom right"</pre>
         <div
             class="demodiv demo3"
             data-bgimg="./assets/200x500.png"
@@ -37,5 +63,9 @@
             });
             $('.demo3').bgimg()
         </script>
+
+    <footer>
+        <p>Copyright &copy; 2016 <a href="https://github.com/rocity">Kevin Kalis</a></p>
+    </footer>
     </body>
 </html>
