@@ -15,9 +15,16 @@ pre {
     border-radius: 3px;
 }
 
-footer p {
+footer {
     text-align: center;
     font-size: 12px;
+}
+
+footer .fork-link {
+    text-decoration: none;
+}
+footer .fork-link p {
+    margin: 0;
 }
 
 .demodiv {

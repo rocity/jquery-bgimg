@@ -41,7 +41,7 @@ Clone this repo then copy `jquery.bgimg.js` into your project directory.
 </script>
 ```
 
-Check out the [demo](./demo/) directory for more examples on how to use this plugin.
+Check out the [docs](./docs/) directory for more examples on how to use this plugin.
 
 # License
 
